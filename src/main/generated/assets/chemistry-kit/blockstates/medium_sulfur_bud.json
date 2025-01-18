@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "chemistry-kit:block/medium_sulfur_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "chemistry-kit:block/medium_sulfur_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "chemistry-kit:block/medium_sulfur_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "chemistry-kit:block/medium_sulfur_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "chemistry-kit:block/medium_sulfur_bud"
+    },
+    "facing=west": {
+      "model": "chemistry-kit:block/medium_sulfur_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
