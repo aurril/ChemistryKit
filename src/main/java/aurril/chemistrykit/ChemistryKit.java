@@ -1,5 +1,6 @@
 package aurril.chemistrykit;
 
+import aurril.chemistrykit.registry.ModBlocks;
 import aurril.chemistrykit.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -20,6 +21,7 @@ public class ChemistryKit implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.initialize();
+		ModBlocks.initialize();
 
 		LOGGER.info("Hello Fabric world!");
 	}

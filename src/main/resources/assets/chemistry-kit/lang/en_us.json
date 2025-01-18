@@ -1,3 +1,6 @@
 {
-  "item.chemistry-kit.sulfur_shard": "Sulfur shard"
+  "item.chemistry-kit.sulfur_shard": "Sulfur shard",
+  "item.chemistry-kit.sulfur_powder": "Sulfur powder",
+  "itemGroup.chemistry-kit": "Chemistry Kit",
+  "block.chemistry-kit.sulfur_block": "Sulfur block"
 }

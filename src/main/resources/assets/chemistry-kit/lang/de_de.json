@@ -1,3 +1,6 @@
 {
-  "item.chemistry-kit.sulfur_shard": "Schwefelscherbe"
+  "item.chemistry-kit.sulfur_shard": "Schwefelscherbe",
+  "item.chemistry-kit.sulfur_powder": "Schwefelpulver",
+  "itemGroup.chemistry-kit": "Chemiebaukasten (chemistry kit)",
+  "block.chemistry-kit.sulfur_block": "Schwefelblock"
 }

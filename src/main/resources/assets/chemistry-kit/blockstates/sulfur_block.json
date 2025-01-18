@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "chemistry-kit:block/sulfur_block" }
+  }
+}
