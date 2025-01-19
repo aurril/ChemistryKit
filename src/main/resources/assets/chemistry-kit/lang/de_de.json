@@ -1,6 +1,13 @@
 {
   "item.chemistry-kit.sulfur_shard": "Schwefelscherbe",
   "item.chemistry-kit.sulfur_powder": "Schwefelpulver",
+
   "itemGroup.chemistry-kit": "Chemiebaukasten (chemistry kit)",
-  "block.chemistry-kit.sulfur_block": "Schwefelblock"
+
+  "block.chemistry-kit.sulfur_block": "Schwefelblock",
+  "block.chemistry-kit.sulfur_cluster": "Schwefelhaufen",
+  "block.chemistry-kit.small_sulfur_bud": "Kleine Schwefelknospe",
+  "block.chemistry-kit.medium_sulfur_bud": "Mittlere Schwefelknospe",
+  "block.chemistry-kit.large_sulfur_bud": "Große Schwefelknospe",
+  "block.chemistry-kit.budding_sulfur": "Schwefelknospenblock"
 }

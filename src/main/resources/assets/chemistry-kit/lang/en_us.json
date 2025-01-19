@@ -1,6 +1,13 @@
 {
-  "item.chemistry-kit.sulfur_shard": "Sulfur shard",
-  "item.chemistry-kit.sulfur_powder": "Sulfur powder",
+  "item.chemistry-kit.sulfur_shard": "Sulfur Shard",
+  "item.chemistry-kit.sulfur_powder": "Sulfur Powder",
+
   "itemGroup.chemistry-kit": "Chemistry Kit",
-  "block.chemistry-kit.sulfur_block": "Sulfur block"
+
+  "block.chemistry-kit.sulfur_block": "Sulfur Block",
+  "block.chemistry-kit.sulfur_cluster": "Sulfur Cluster",
+  "block.chemistry-kit.small_sulfur_bud": "Small Sulfur Bud",
+  "block.chemistry-kit.medium_sulfur_bud": "Medium Sulfur Bud",
+  "block.chemistry-kit.large_sulfur_bud": "Large Sulfur Bud",
+  "block.chemistry-kit.budding_sulfur": "Budding Sulfur"
 }

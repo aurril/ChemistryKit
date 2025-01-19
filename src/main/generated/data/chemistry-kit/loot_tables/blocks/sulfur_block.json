@@ -10,12 +10,11 @@
       ],
       "entries": [
         {
-          "weight": 3,
           "type": "minecraft:item",
-          "name": "chemistry-kit:sulfur_block"
+          "name": "chemistry-kit:sulfur_block",
+          "weight": 3
         },
         {
-          "weight": 7,
           "type": "minecraft:alternatives",
           "children": [
             {
@@ -39,7 +38,6 @@
             },
             {
               "type": "minecraft:item",
-              "name": "chemistry-kit:sulfur_shard",
               "functions": [
                 {
                   "add": false,
@@ -49,8 +47,15 @@
                     "min": 4.0
                   },
                   "function": "minecraft:set_count"
+                },
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
                 }
-              ]
+              ],
+              "name": "chemistry-kit:sulfur_shard",
+              "weight": 7
             }
           ]
         }
