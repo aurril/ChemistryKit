@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sulfur_powder": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "chemistry-kit:sulfur_powder"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sulfur_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "chemistry-kit:sulfur_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chemistry-kit:sulfur_powder"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_sulfur_powder",
+      "has_sulfur_shard",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chemistry-kit:sulfur_powder"
+    ]
+  },
+  "sends_telemetry_event": false
+}
