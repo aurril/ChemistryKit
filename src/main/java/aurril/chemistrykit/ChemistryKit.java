@@ -1,7 +1,6 @@
 package aurril.chemistrykit;
 
-import aurril.chemistrykit.registry.ModBlocks;
-import aurril.chemistrykit.registry.ModItems;
+import aurril.chemistrykit.registry.*;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -22,6 +21,9 @@ public class ChemistryKit implements ModInitializer {
 		// Proceed with mild caution.
 		ModItems.initialize();
 		ModBlocks.initialize();
+		ModPlacedFeatures.initialize();
+		ModConfiguredFeatures.initialize();
+		ModFeatures.placeFeaturesInBiomes();
 
 		LOGGER.info("Hello Fabric world!");
 	}
