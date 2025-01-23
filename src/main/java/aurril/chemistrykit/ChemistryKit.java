@@ -1,5 +1,6 @@
 package aurril.chemistrykit;
 
+import aurril.chemistrykit.registry.*;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,6 +19,11 @@ public class ChemistryKit implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModItems.initialize();
+		ModBlocks.initialize();
+		ModPlacedFeatures.initialize();
+		ModConfiguredFeatures.initialize();
+		ModFeatures.placeFeaturesInBiomes();
 
 		LOGGER.info("Hello Fabric world!");
 	}

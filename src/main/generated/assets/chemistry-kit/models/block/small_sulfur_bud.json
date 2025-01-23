@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "chemistry-kit:block/small_sulfur_bud"
+  }
+}

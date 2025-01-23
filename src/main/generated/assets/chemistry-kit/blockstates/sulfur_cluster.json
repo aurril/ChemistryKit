@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "chemistry-kit:block/sulfur_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "chemistry-kit:block/sulfur_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "chemistry-kit:block/sulfur_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "chemistry-kit:block/sulfur_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "chemistry-kit:block/sulfur_cluster"
+    },
+    "facing=west": {
+      "model": "chemistry-kit:block/sulfur_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

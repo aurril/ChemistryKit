@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chemistry-kit:sulfur_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "chemistry-kit:sulfur_shard"
+  }
+}
