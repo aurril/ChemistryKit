@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 
 import java.util.function.Consumer;
@@ -21,6 +22,9 @@ public class ModRecipes extends FabricRecipeProvider {
         ModRecipes.addSulfurBlockRecipe(consumer);
         ModRecipes.addSulfurShardRecipe(consumer);
         ModRecipes.addSulfurPowderRecipe(consumer);
+        ModRecipes.addCharcoalPowderRecipe(consumer);
+        ModRecipes.addCharcoalFromCharcoalPowderRecipe(consumer);
+        ModRecipes.addGunpowderRecipe(consumer);
     }
 
     private static void addSulfurBlockRecipe(Consumer<RecipeJsonProvider> consumer) {
@@ -48,6 +52,37 @@ public class ModRecipes extends FabricRecipeProvider {
                 .input(ModItems.SULFUR_SHARD)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.SULFUR_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.SULFUR_POWDER))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.SULFUR_SHARD), FabricRecipeProvider.conditionsFromItem(ModItems.SULFUR_SHARD))
+                .offerTo(consumer);
+    }
+
+    private static void addCharcoalPowderRecipe(Consumer<RecipeJsonProvider> consumer) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHARCOAL_POWDER, 4)
+                .input(Items.CHARCOAL)
+                .criterion(FabricRecipeProvider.hasItem(Items.CHARCOAL), FabricRecipeProvider.conditionsFromItem(Items.CHARCOAL))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.CHARCOAL_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.CHARCOAL_POWDER))
+                .offerTo(consumer);
+    }
+
+    private static void addCharcoalFromCharcoalPowderRecipe(Consumer<RecipeJsonProvider> consumer) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CHARCOAL)
+                .input(ModItems.CHARCOAL_POWDER, 4)
+                .criterion(FabricRecipeProvider.hasItem(Items.CHARCOAL), FabricRecipeProvider.conditionsFromItem(Items.CHARCOAL))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.CHARCOAL_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.CHARCOAL_POWDER))
+                .offerTo(consumer, "charcoal_from_charcoal_powder");
+    }
+
+    private static void addGunpowderRecipe(Consumer<RecipeJsonProvider> consumer) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.GUNPOWDER)
+                .pattern("###")
+                .pattern("C#S")
+                .pattern("###")
+                .input('#', ModItems.SALTPETER_POWDER)
+                .input('C', ModItems.CHARCOAL_POWDER)
+                .input('S', ModItems.SULFUR_POWDER)
+                .criterion(FabricRecipeProvider.hasItem(Items.GUNPOWDER), FabricRecipeProvider.conditionsFromItem(Items.GUNPOWDER))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.CHARCOAL_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.CHARCOAL_POWDER))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.SULFUR_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.SULFUR_POWDER))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.SALTPETER_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.SALTPETER_POWDER))
                 .offerTo(consumer);
     }
 }

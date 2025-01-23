@@ -13,5 +13,6 @@ public class ModPlacedFeatures {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(ChemistryKit.MOD_ID, id));
     }
 
-    public static RegistryKey<PlacedFeature> SULFUR_GEODE = of("sulfur_geode");
+    public static final RegistryKey<PlacedFeature> SULFUR_GEODE = of("sulfur_geode");
+    public static final RegistryKey<PlacedFeature> SALTPETER = of("saltpeter");
 }

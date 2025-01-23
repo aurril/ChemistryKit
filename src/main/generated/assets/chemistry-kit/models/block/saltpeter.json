@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chemistry-kit:block/saltpeter_bottom",
+    "side": "chemistry-kit:block/saltpeter",
+    "top": "chemistry-kit:block/saltpeter_top"
+  }
+}

@@ -4,6 +4,7 @@ import aurril.chemistrykit.ChemistryKit;
 import net.fabricmc.fabric.api.biome.v1.*;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 
@@ -22,6 +23,14 @@ public class ModFeatures {
                         modifier(
                                 ModPlacedFeatures.SULFUR_GEODE,
                                 GenerationStep.Feature.UNDERGROUND_DECORATION
+                        )
+                )
+                .add(
+                        ModificationPhase.ADDITIONS,
+                        BiomeSelectors.includeByKey(BiomeKeys.DESERT),
+                        modifier(
+                                ModPlacedFeatures.SALTPETER,
+                                GenerationStep.Feature.UNDERGROUND_ORES
                         )
                 );
     }

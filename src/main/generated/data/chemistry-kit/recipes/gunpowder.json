@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "chemistry-kit:saltpeter_powder"
+    },
+    "C": {
+      "item": "chemistry-kit:charcoal_powder"
+    },
+    "S": {
+      "item": "chemistry-kit:sulfur_powder"
+    }
+  },
+  "pattern": [
+    "###",
+    "C#S",
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:gunpowder"
+  },
+  "show_notification": true
+}

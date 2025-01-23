@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chemistry-kit:block/saltpeter"
+    }
+  }
+}

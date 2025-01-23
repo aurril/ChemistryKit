@@ -17,6 +17,7 @@ public class ModModels extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         this.registerSimpleCubeBlocks(blockStateModelGenerator);
+        this.registerSaltpeter(blockStateModelGenerator);
         this.registerCrossBlocksLikeAmethyst(blockStateModelGenerator);
     }
 
@@ -29,6 +30,13 @@ public class ModModels extends FabricModelProvider {
         for (Block block : simpleCubeBlocks) {
             blockStateModelGenerator.registerSimpleCubeAll(block);
         }
+    }
+
+    private void registerSaltpeter(BlockStateModelGenerator blockStateModelGenerator) {
+        Block block = ModBlocks.SALTPETER;
+        TexturedModel texturedModel = TexturedModel.SIDE_TOP_BOTTOM_WALL.get(block);
+
+        blockStateModelGenerator.new BlockTexturePool(texturedModel.getTextures()).base(block, texturedModel.getModel());
     }
 
     private void registerCrossBlocksLikeAmethyst(BlockStateModelGenerator blockStateModelGenerator) {

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chemistry-kit:charcoal_powder"
+    },
+    {
+      "item": "chemistry-kit:charcoal_powder"
+    },
+    {
+      "item": "chemistry-kit:charcoal_powder"
+    },
+    {
+      "item": "chemistry-kit:charcoal_powder"
+    }
+  ],
+  "result": {
+    "item": "minecraft:charcoal"
+  }
+}

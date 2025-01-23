@@ -2,9 +2,12 @@
   "block.chemistry-kit.budding_sulfur": "Budding Sulfur",
   "block.chemistry-kit.large_sulfur_bud": "Large Sulfur Bud",
   "block.chemistry-kit.medium_sulfur_bud": "Medium Sulfur Bud",
+  "block.chemistry-kit.saltpeter": "Saltpeter",
   "block.chemistry-kit.small_sulfur_bud": "Small Sulfur Bud",
   "block.chemistry-kit.sulfur_block": "Sulfur Block",
   "block.chemistry-kit.sulfur_cluster": "Sulfur Cluster",
+  "item.chemistry-kit.charcoal_powder": "Charcoal Powder",
+  "item.chemistry-kit.saltpeter_powder": "Saltpeter Powder",
   "item.chemistry-kit.sulfur_powder": "Sulfur Powder",
   "item.chemistry-kit.sulfur_shard": "Sulfur Shard",
   "itemGroup.chemistry-kit": "Chemistry Kit"

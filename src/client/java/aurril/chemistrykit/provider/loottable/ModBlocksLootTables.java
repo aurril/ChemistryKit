@@ -32,6 +32,7 @@ public class ModBlocksLootTables extends FabricBlockLootTableProvider {
         addSulfurCluster();
         addSulfurBuds();
         addBuddingSulfur();
+        addSaltPeter();
     }
 
     private void addSulfurBlock() {
@@ -117,6 +118,30 @@ public class ModBlocksLootTables extends FabricBlockLootTableProvider {
                 ModBlocks.BUDDING_SULFUR_BLOCK,
                 LootTable.builder()
                         .randomSequenceId(ModBlocks.BUDDING_SULFUR_BLOCK.getLootTableId())
+        );
+    }
+
+    private void addSaltPeter() {
+        this.addDrop(
+                ModBlocks.SALTPETER, (Block block) -> {
+                    LootTable.Builder builder = LootTable.builder();
+                    LootPool.Builder poolBuilder = LootPool.builder();
+
+                    poolBuilder
+                            .conditionally(SurvivesExplosionLootCondition.builder())
+                            .with(AlternativeEntry.builder(
+                                    ItemEntry.builder(block)
+                                            .conditionally(WITH_SILK_TOUCH),
+                                    ItemEntry.builder(ModItems.SALTPETER_POWDER)
+                                            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f)))
+                                            .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))
+                            ));
+
+                    builder.pool(poolBuilder)
+                            .randomSequenceId(block.getLootTableId());
+
+                    return builder;
+                }
         );
     }
 }
