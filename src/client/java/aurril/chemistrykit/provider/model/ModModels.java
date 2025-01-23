@@ -1,6 +1,7 @@
 package aurril.chemistrykit.provider.model;
 
 import aurril.chemistrykit.registry.ModBlocks;
+import aurril.chemistrykit.registry.ModConfiguredFeatures;
 import aurril.chemistrykit.registry.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -61,7 +62,9 @@ public class ModModels extends FabricModelProvider {
     private void registerSimpleItems(ItemModelGenerator itemModelGenerator) {
         Item[] simpleItems = {
                 ModItems.SULFUR_SHARD,
-                ModItems.SULFUR_POWDER
+                ModItems.SULFUR_POWDER,
+                ModItems.SALTPETER_POWDER,
+                ModItems.CHARCOAL_POWDER
         };
 
         for (Item item : simpleItems) {
