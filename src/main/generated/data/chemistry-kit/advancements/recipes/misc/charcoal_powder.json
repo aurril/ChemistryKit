@@ -13,18 +13,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_charcoal_powder": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "chemistry-kit:charcoal_powder"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "chemistry-kit:charcoal_powder"
@@ -35,7 +23,6 @@
   "requirements": [
     [
       "has_charcoal",
-      "has_charcoal_powder",
       "has_the_recipe"
     ]
   ],

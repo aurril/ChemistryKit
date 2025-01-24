@@ -13,18 +13,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_gunpowder": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:gunpowder"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_saltpeter_powder": {
       "conditions": {
         "items": [
@@ -51,14 +39,13 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:gunpowder"
+        "recipe": "chemistry-kit:gunpowder"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_gunpowder",
       "has_charcoal_powder",
       "has_sulfur_powder",
       "has_saltpeter_powder",
@@ -67,7 +54,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:gunpowder"
+      "chemistry-kit:gunpowder"
     ]
   },
   "sends_telemetry_event": false

@@ -33,7 +33,6 @@ public class ModRecipes extends FabricRecipeProvider {
                 .pattern("###")
                 .pattern("###")
                 .input('#', ModItems.SULFUR_SHARD)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SULFUR_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.SULFUR_BLOCK))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.SULFUR_SHARD), FabricRecipeProvider.conditionsFromItem(ModItems.SULFUR_SHARD))
                 .showNotification(true)
                 .offerTo(consumer);
@@ -43,14 +42,12 @@ public class ModRecipes extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SULFUR_SHARD, 9)
                 .input(ModBlocks.SULFUR_BLOCK)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.SULFUR_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.SULFUR_BLOCK))
-                .criterion(FabricRecipeProvider.hasItem(ModItems.SULFUR_SHARD), FabricRecipeProvider.conditionsFromItem(ModItems.SULFUR_SHARD))
                 .offerTo(consumer);
     }
 
     private static void addSulfurPowderRecipe(Consumer<RecipeJsonProvider> consumer) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SULFUR_POWDER, 2)
                 .input(ModItems.SULFUR_SHARD)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.SULFUR_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.SULFUR_POWDER))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.SULFUR_SHARD), FabricRecipeProvider.conditionsFromItem(ModItems.SULFUR_SHARD))
                 .offerTo(consumer);
     }
@@ -59,16 +56,16 @@ public class ModRecipes extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHARCOAL_POWDER, 4)
                 .input(Items.CHARCOAL)
                 .criterion(FabricRecipeProvider.hasItem(Items.CHARCOAL), FabricRecipeProvider.conditionsFromItem(Items.CHARCOAL))
-                .criterion(FabricRecipeProvider.hasItem(ModItems.CHARCOAL_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.CHARCOAL_POWDER))
                 .offerTo(consumer);
     }
 
     private static void addCharcoalFromCharcoalPowderRecipe(Consumer<RecipeJsonProvider> consumer) {
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CHARCOAL)
-                .input(ModItems.CHARCOAL_POWDER, 4)
-                .criterion(FabricRecipeProvider.hasItem(Items.CHARCOAL), FabricRecipeProvider.conditionsFromItem(Items.CHARCOAL))
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CHARCOAL)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModItems.CHARCOAL_POWDER)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.CHARCOAL_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.CHARCOAL_POWDER))
-                .offerTo(consumer, "charcoal_from_charcoal_powder");
+                .offerTo(consumer, "chemistry-kit:charcoal_from_charcoal_powder");
     }
 
     private static void addGunpowderRecipe(Consumer<RecipeJsonProvider> consumer) {
@@ -79,10 +76,9 @@ public class ModRecipes extends FabricRecipeProvider {
                 .input('#', ModItems.SALTPETER_POWDER)
                 .input('C', ModItems.CHARCOAL_POWDER)
                 .input('S', ModItems.SULFUR_POWDER)
-                .criterion(FabricRecipeProvider.hasItem(Items.GUNPOWDER), FabricRecipeProvider.conditionsFromItem(Items.GUNPOWDER))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.CHARCOAL_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.CHARCOAL_POWDER))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.SULFUR_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.SULFUR_POWDER))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.SALTPETER_POWDER), FabricRecipeProvider.conditionsFromItem(ModItems.SALTPETER_POWDER))
-                .offerTo(consumer);
+                .offerTo(consumer, "chemistry-kit:gunpowder");
     }
 }
