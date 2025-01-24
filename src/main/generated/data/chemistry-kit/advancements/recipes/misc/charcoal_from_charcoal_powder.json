@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sulfur_shard": {
+    "has_charcoal_powder": {
       "conditions": {
         "items": [
           {
             "items": [
-              "chemistry-kit:sulfur_shard"
+              "chemistry-kit:charcoal_powder"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chemistry-kit:sulfur_block"
+        "recipe": "chemistry-kit:charcoal_from_charcoal_powder"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sulfur_shard",
+      "has_charcoal_powder",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "chemistry-kit:sulfur_block"
+      "chemistry-kit:charcoal_from_charcoal_powder"
     ]
   },
   "sends_telemetry_event": false

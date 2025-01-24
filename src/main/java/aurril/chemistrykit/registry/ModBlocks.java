@@ -23,6 +23,7 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.LARGE_SULFUR_BUD.asItem());
             itemGroup.add(ModBlocks.SULFUR_CLUSTER.asItem());
             itemGroup.add(ModBlocks.BUDDING_SULFUR_BLOCK.asItem());
+            itemGroup.add(ModBlocks.SALTPETER.asItem());
         });
     }
 
@@ -123,6 +124,14 @@ public class ModBlocks {
                             .pistonBehavior(PistonBehavior.DESTROY)
             ),
             "budding_sulfur",
+            true
+    );
+
+    public static final Block SALTPETER = register(
+            new Block(
+                    AbstractBlock.Settings.copy(Blocks.SANDSTONE)
+            ),
+            "saltpeter",
             true
     );
 }

@@ -15,6 +15,8 @@ public class EnglishEnUs implements TranslationProvider{
     private static void addItemTranslations(FabricLanguageProvider.TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.SULFUR_POWDER, "Sulfur Powder");
         translationBuilder.add(ModItems.SULFUR_SHARD, "Sulfur Shard");
+        translationBuilder.add(ModItems.SALTPETER_POWDER, "Saltpeter Powder");
+        translationBuilder.add(ModItems.CHARCOAL_POWDER, "Charcoal Powder");
     }
 
     private static void addBlockTranslations(FabricLanguageProvider.TranslationBuilder translationBuilder) {
@@ -24,5 +26,6 @@ public class EnglishEnUs implements TranslationProvider{
         translationBuilder.add(ModBlocks.MEDIUM_SULFUR_BUD, "Medium Sulfur Bud");
         translationBuilder.add(ModBlocks.LARGE_SULFUR_BUD, "Large Sulfur Bud");
         translationBuilder.add(ModBlocks.BUDDING_SULFUR_BLOCK, "Budding Sulfur");
+        translationBuilder.add(ModBlocks.SALTPETER, "Saltpeter");
     }
 }

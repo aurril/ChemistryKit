@@ -15,6 +15,8 @@ public class GermanDeDe implements TranslationProvider {
     private static void addItemTranslations(FabricLanguageProvider.TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.SULFUR_POWDER, "Schwefelpulver");
         translationBuilder.add(ModItems.SULFUR_SHARD, "Schwefelscherbe");
+        translationBuilder.add(ModItems.SALTPETER_POWDER, "Salpeterpulver");
+        translationBuilder.add(ModItems.CHARCOAL_POWDER, "Holzkohlepulver");
     }
 
     private static void addBlockTranslations(FabricLanguageProvider.TranslationBuilder translationBuilder) {
@@ -24,5 +26,6 @@ public class GermanDeDe implements TranslationProvider {
         translationBuilder.add(ModBlocks.MEDIUM_SULFUR_BUD, "Mittlere Schwefelknospe");
         translationBuilder.add(ModBlocks.LARGE_SULFUR_BUD, "Große Schwefelknospe");
         translationBuilder.add(ModBlocks.BUDDING_SULFUR_BLOCK, "Schwefelknospenblock");
+        translationBuilder.add(ModBlocks.SALTPETER, "Salpeter");
     }
 }

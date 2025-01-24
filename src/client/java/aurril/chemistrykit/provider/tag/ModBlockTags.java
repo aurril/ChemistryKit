@@ -19,8 +19,12 @@ public class ModBlockTags extends FabricTagProvider.BlockTagProvider {
         this.getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SULFUR_BLOCK);
 
+        this.getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.SALTPETER);
+
         this.getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.SULFUR_BLOCK)
-                .add(ModBlocks.BUDDING_SULFUR_BLOCK);
+                .add(ModBlocks.BUDDING_SULFUR_BLOCK)
+                .add(ModBlocks.SALTPETER);
     }
 }

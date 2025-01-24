@@ -19,6 +19,8 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModItems.SULFUR_SHARD);
             itemGroup.add(ModItems.SULFUR_POWDER);
+            itemGroup.add(ModItems.SALTPETER_POWDER);
+            itemGroup.add(ModItems.CHARCOAL_POWDER);
         });
     }
 
@@ -44,5 +46,15 @@ public class ModItems {
     public static final Item SULFUR_POWDER = register(
             new Item(new FabricItemSettings()),
             "sulfur_powder"
+    );
+
+    public static final Item SALTPETER_POWDER = register(
+            new Item(new FabricItemSettings()),
+            "saltpeter_powder"
+    );
+
+    public static final Item CHARCOAL_POWDER = register(
+            new Item(new FabricItemSettings()),
+            "charcoal_powder"
     );
 }

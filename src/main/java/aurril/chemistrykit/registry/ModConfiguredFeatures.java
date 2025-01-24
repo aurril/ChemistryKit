@@ -14,4 +14,5 @@ public class ModConfiguredFeatures {
     }
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> SULFUR_GEODE = of("sulfur_geode");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SALTPETER = of("saltpeter");
 }
