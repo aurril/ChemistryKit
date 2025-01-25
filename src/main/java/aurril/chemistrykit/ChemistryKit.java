@@ -1,5 +1,6 @@
 package aurril.chemistrykit;
 
+import aurril.chemistrykit.event.CommonEvents;
 import aurril.chemistrykit.registry.*;
 import net.fabricmc.api.ModInitializer;
 
@@ -24,6 +25,7 @@ public class ChemistryKit implements ModInitializer {
 		ModPlacedFeatures.initialize();
 		ModConfiguredFeatures.initialize();
 		ModFeatures.placeFeaturesInBiomes();
+		CommonEvents.register();
 
 		LOGGER.info("Hello Fabric world!");
 	}
