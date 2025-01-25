@@ -18,6 +18,6 @@ public class CommonEvents {
                 .orElseThrow(() -> new IllegalStateException("Chemistry-Kit's ModContainer couldn't be found!"));
         Identifier packId = new Identifier(ChemistryKit.MOD_ID, "patrix_1.20_chemistry-kit_addon");
 
-        ResourceManagerHelper.registerBuiltinResourcePack(packId, create, "Create Legacy Copper", ResourcePackActivationType.NORMAL);
+        ResourceManagerHelper.registerBuiltinResourcePack(packId, create, "Chemistry Kit 32x Patrix textures", ResourcePackActivationType.NORMAL);
     }
 }
