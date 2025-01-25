@@ -133,7 +133,7 @@ public class ModBlocksLootTables extends FabricBlockLootTableProvider {
                                     ItemEntry.builder(block)
                                             .conditionally(WITH_SILK_TOUCH),
                                     ItemEntry.builder(ModItems.SALTPETER_POWDER)
-                                            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0f)))
+                                            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)))
                                             .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))
                             ));
 

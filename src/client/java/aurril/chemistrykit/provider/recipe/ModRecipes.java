@@ -69,7 +69,7 @@ public class ModRecipes extends FabricRecipeProvider {
     }
 
     private static void addGunpowderRecipe(Consumer<RecipeJsonProvider> consumer) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.GUNPOWDER)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.GUNPOWDER, 2)
                 .pattern("###")
                 .pattern("C#S")
                 .pattern("###")
